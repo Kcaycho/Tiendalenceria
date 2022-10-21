@@ -1,112 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login usuario</title>
-    <link href="" rel="stylesheet" type="text/css" />
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-      crossorigin="anonymous"
-    />
 
-    <title>Importadora Larraín</title>
-    <style>
-      body {
-        background: url(../weblarain/img/container-terminal-wharf-transport.jpg);
-        background-repeat: no-repeat center;
-        background-position: center;
-        background-attachment: fixed;
-        background-size: cover;
-      }
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login usuario</title>
+  <link href="" rel="stylesheet" type="text/css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
 
-      .modal-content {
-        background-color: white;
-        padding: 20px 20px 20px;
-        border: none;
-        opacity: 98%;
-        width: 500px;
-        text-align: left;
-      }
+  <title>Importadora Larraín</title>
+  <style>
+    body {
+      background: url(img/container-terminal-wharf-transport.jpg);
+      background-repeat: no-repeat center;
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
 
-      .required:after {
-        content: "*";
-        color: red;
-      }
-    </style>
-  </head>
+    .modal-content {
+      background-color: white;
+      padding: 20px 20px 20px;
+      border: none;
+      opacity: 98%;
+      width: 500px;
+      text-align: left;
+    }
 
-  <body>
-    <div class="modal-dialog text-center">
-      <div class="col-sm-9 main-section">
-        <div class="modal-content">
-          <!--formulario login-->
-          <form class="col-12" action="#" method="get" name="login" id="login">
-            <!--nombre usuario-->
-            <label class="form-label required">Nombre</label>
-            <p class="form-group" id="usuario">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Nombre usuario"
-              />
-            </p>
-            <!--Apellido usuario-->
-            <label class="form-label required">Apellido</label>
-            <p class="form-group" id="Apellido">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Apellido usuario"
-              />
-            </p>
-            <!--rut-->
-            <label class="form-label required">Rut</label>
-            <p class="form-group" id="Rut">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Rut usuario"
-              />
-            </p>
+    .required:after {
+      content: "*";
+      color: red;
+    }
+  </style>
+</head>
 
-            <!--correo-->
-            <label class="form-label required">Correo</label>
-            <p class="form-group" id="Correo">
-              <input type="email" class="form-control" placeholder="Correo" />
-            </p>
+<body>
+  <div class="modal-dialog text-center">
+    <div class="col-sm-9 main-section">
+      <div class="modal-content">
+        <!--formulario login-->
+        <form class="col-12" action="#" method="get" name="login" id="login">
+          <!--nombre usuario-->
+          <label class="form-label required">Nombre</label>
+          <p class="form-group" id="usuario">
+            <input type="text" class="form-control" placeholder="Nombre usuario" />
+          </p>
+          <!--Apellido usuario-->
+          <label class="form-label required">Apellido</label>
+          <p class="form-group" id="Apellido">
+            <input type="text" class="form-control" placeholder="Apellido usuario" />
+          </p>
+          <!--rut-->
+          <label class="form-label required">Rut</label>
+          <p class="form-group" id="Rut">
+            <input type="text" class="form-control" placeholder="Rut usuario" />
+          </p>
 
-            <!--Region-->
-            <label class="form-label required">Región</label>
-            <p class="form-group" id="Región">
-              <input type="text" class="form-control" placeholder="Región" />
-            </p>
-            <!--provincia-->
-            <label class="form-label required">Provincia</label>
-            <p class="form-group" id="Provincia">
-              <input type="text" class="form-control" placeholder="Provincia" />
-            </p>
-            <!--Comuna-->
-            <label class="form-label required">Comuna</label>
-            <p class="form-group" id="Comuna">
-              <input type="text" class="form-control" placeholder="Comuna" />
-            </p>
-            <!--boton ingresar-->
-            <button
-              type="submit"
-              id="enviar"
-              value="Enviar datos"
-              class="btn btn-primary float-end"
-            >
-              Registrar
-            </button>
-          </form>
-        </div>
+          <!--correo-->
+          <label class="form-label required">Correo</label>
+          <p class="form-group" id="Correo">
+            <input type="email" class="form-control" placeholder="Correo" />
+          </p>
+
+          <!--Region-->
+          <label class="form-label required">Región</label>
+          <p class="form-group" id="Región">
+            <input type="text" class="form-control" placeholder="Región" />
+          </p>
+          <!--provincia-->
+          <label class="form-label required">Provincia</label>
+          <p class="form-group" id="Provincia">
+            <input type="text" class="form-control" placeholder="Provincia" />
+          </p>
+          <!--Comuna-->
+          <label class="form-label required">Comuna</label>
+          <p class="form-group" id="Comuna">
+            <input type="text" class="form-control" placeholder="Comuna" />
+          </p>
+          <!--boton ingresar-->
+          <button type="submit" id="enviar" value="Enviar datos" class="btn btn-primary float-end">
+            Registrar
+          </button>
+        </form>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
